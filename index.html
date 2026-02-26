@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SliceTune - Optimize your 3D prints faster without forum rabbit holes. Early access waitlist for Bambu Studio and OrcaSlicer users.">
+    <title>SliceTune - 3D Print Optimization Made Simple</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="nav">
+        <div class="container nav__container">
+            <div class="nav__logo">SliceTune</div>
+            <nav class="nav__links">
+                <a href="#waitlist" class="nav__link">Early Access</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero__accent"></div>
+            <div class="container hero__container">
+                <h1 class="hero__title">Optimize your prints faster — without forum rabbit holes.</h1>
+                <p class="hero__subtitle">
+                    SliceTune helps Bambu and Orca users find the right settings without endless testing.
+                </p>
+                <a href="#waitlist" class="btn btn--primary btn--lg hero__cta">Join Early Access</a>
+            </div>
+        </section>
+
+        <!-- 2. Problem Section -->
+        <section id="problem" class="section problem">
+            <div class="container">
+                <h2 class="section__title">The Problem</h2>
+                <p class="section__text">
+                    You're stuck tweaking speeds, temps, and retraction for hours. MakerWorld has too many settings. Forums give conflicting advice. You just want clean prints that work.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. How It Works Section -->
+        <section id="how-it-works" class="section how-it-works">
+            <div class="container">
+                <h2 class="section__title">How It Works</h2>
+                <div class="how-it-works__grid">
+                    <div class="card">
+                        <h3 class="card__title">1. Tell us your setup</h3>
+                        <p class="card__text">Bambu model, filament type, and what you're printing.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">2. Get optimized settings</h3>
+                        <p class="card__text">Proven profiles tailored to your hardware and goals.</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="card__title">3. Print with confidence</h3>
+                        <p class="card__text">Less trial and error. More successful prints.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Who It's For Section -->
+        <section id="who-its-for" class="section who-its-for">
+            <div class="container">
+                <h2 class="section__title">Who It's For</h2>
+                <ul class="who-its-for__list">
+                    <li>Small sellers and side hustlers printing on Bambu machines</li>
+                    <li>Serious hobbyists using Bambu Studio or OrcaSlicer</li>
+                    <li>Anyone tired of guessing settings and wasting filament</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 5. Why Not Forums Section -->
+        <section id="why-not-forums" class="section why-not-forums">
+            <div class="container">
+                <h2 class="section__title">Why Not Just Forums or MakerWorld?</h2>
+                <p class="section__text">
+                    Forums are noisy and take hours to search. MakerWorld profiles are hit-or-miss. SliceTune curates proven settings and gives you answers in seconds, not tabs.
+                </p>
+            </div>
+        </section>
+
+        <!-- 6. Early Feature Scope Section -->
+        <section id="features" class="section features">
+            <div class="container">
+                <h2 class="section__title">Starting Scope (Early Access)</h2>
+                <div class="features__grid">
+                    <div class="card card--feature">
+                        <h3 class="card__title">Bambu-first support</h3>
+                        <p class="card__text">Starting with selected Bambu + Orca workflows.</p>
+                    </div>
+                    <div class="card card--feature">
+                        <h3 class="card__title">PLA + PETG first</h3>
+                        <p class="card__text">Focused on the most common materials before expanding.</p>
+                    </div>
+                    <div class="card card--feature">
+                        <h3 class="card__title">Common issue guidance</h3>
+                        <p class="card__text">Stringing, adhesion, ringing, blobs, and other high-frequency problems.</p>
+                    </div>
+                    <div class="card card--feature">
+                        <h3 class="card__title">Clear next-step recommendations</h3>
+                        <p class="card__text">Ordered setting changes with simple explanations — no random tweaking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Premium Teaser Section -->
+        <section id="premium-teaser" class="section premium-teaser">
+            <div class="container">
+                <h2 class="section__title">Coming Soon: Premium Features</h2>
+                <p class="section__text">
+                    Advanced material support, multi-color tuning, team workspaces for print farms, and analytics. Free tier stays free.
+                </p>
+            </div>
+        </section>
+
+        <!-- 8. Waitlist Form Section -->
+        <section id="waitlist" class="section waitlist">
+            <div class="container">
+                <h2 class="section__title">Join the Waitlist</h2>
+                <p class="section__text">
+                    Be the first to know when SliceTune launches. Early access users get free premium features for 3 months.
+                </p>
+                
+                <form id="waitlist-form" class="form" novalidate>
+                    <!-- Honeypot field for spam protection (hidden from humans) -->
+                    <input 
+                        type="text" 
+                        name="bot-field" 
+                        id="bot-field" 
+                        class="form__honeypot" 
+                        tabindex="-1" 
+                        autocomplete="off"
+                        aria-hidden="true"
+                    >
+                    
+                    <!-- Email -->
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email Address*</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            class="form__input" 
+                            placeholder="you@example.com"
+                            required
+                            aria-required="true"
+                        >
+                        <span class="form__error" id="email-error" role="alert"></span>
+                    </div>
+
+                    <!-- Bambu Printer Model -->
+                    <div class="form__group">
+                        <label for="printer-model" class="form__label">Your Bambu Printer*</label>
+                        <select id="printer-model" name="printer-model" class="form__select" required aria-required="true">
+                            <option value="">Select your model</option>
+                            <option value="x1c">X1 Carbon</option>
+                            <option value="x1">X1</option>
+                            <option value="p1s">P1S</option>
+                            <option value="p1p">P1P</option>
+                            <option value="a1">A1</option>
+                            <option value="a1-mini">A1 Mini</option>
+                            <option value="other">Other / I use OrcaSlicer</option>
+                        </select>
+                        <span class="form__error" id="printer-model-error" role="alert"></span>
+                    </div>
+
+                    <!-- Print Use -->
+                    <div class="form__group">
+                        <label for="print-use" class="form__label">I print for*</label>
+                        <select id="print-use" name="print-use" class="form__select" required aria-required="true">
+                            <option value="">Select one</option>
+                            <option value="hobby">Hobby / Personal</option>
+                            <option value="business">Business / Selling</option>
+                            <option value="both">Both</option>
+                        </select>
+                        <span class="form__error" id="print-use-error" role="alert"></span>
+                    </div>
+
+                    <!-- Biggest Issue -->
+                    <div class="form__group">
+                        <label for="biggest-issue" class="form__label">My biggest print issue right now</label>
+                        <textarea 
+                            id="biggest-issue" 
+                            name="biggest-issue" 
+                            class="form__textarea" 
+                            placeholder="e.g., first layer adhesion, stringing, layer shifts..."
+                            rows="3"
+                        ></textarea>
+                    </div>
+
+                    <!-- Print Frequency -->
+                    <div class="form__group">
+                        <label for="print-frequency" class="form__label">I print*</label>
+                        <select id="print-frequency" name="print-frequency" class="form__select" required aria-required="true">
+                            <option value="">Select frequency</option>
+                            <option value="daily">Daily</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="occasionally">Occasionally</option>
+                        </select>
+                        <span class="form__error" id="print-frequency-error" role="alert"></span>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn--primary btn--full btn--lg" id="submit-btn">
+                        Join Waitlist
+                    </button>
+                    
+                    <!-- Form Response Message (hidden by default) -->
+                    <div id="form-response" class="form__response" style="display: none;" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- 9. FAQ Section -->
+        <section id="faq" class="section faq">
+            <div class="container">
+                <h2 class="section__title">FAQ</h2>
+                
+                <div class="faq__item">
+                    <h3 class="faq__question">When will SliceTune launch?</h3>
+                    <p class="faq__answer">
+                        We're targeting Q2 2026 for early access. Waitlist members get first access and 3 months of free premium features.
+                    </p>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__question">Will there be a free tier?</h3>
+                    <p class="faq__answer">
+                        Yes. Core profiles and basic search will always be free. Premium features (advanced materials, team workspaces) come later.
+                    </p>
+                </div>
+
+                <div class="faq__item">
+                    <h3 class="faq__question">Do I need Bambu hardware?</h3>
+                    <p class="faq__answer">
+                        For now, yes. We're starting with Bambu Studio and OrcaSlicer users, but other printers may be supported in the future.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Final CTA Section -->
+        <section id="final-cta" class="section final-cta">
+            <div class="container">
+                <h2 class="final-cta__title">Ready to stop guessing?</h2>
+                <p class="final-cta__text">Join early access and get optimized settings from day one.</p>
+                <a href="#waitlist" class="btn btn--primary">Get Early Access</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__brand">
+                <div class="footer__logo">SliceTune</div>
+                <p class="footer__tagline">Optimize your prints faster.</p>
+            </div>
+            <div class="footer__links">
+                <a href="privacy.html" class="footer__link">Privacy</a>
+                <a href="imprint.html" class="footer__link">Imprint</a>
+                <a href="mailto:slicetune.dev@gmail.com?subject=SliceTune%20Inquiry&body=Hi%20SliceTune%2C%0A%0A" class="footer__link">Contact</a>
+            </div>
+            <div class="footer__copyright">
+                &copy; 2026 SliceTune. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
